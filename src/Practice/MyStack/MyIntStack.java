@@ -6,5 +6,6 @@ public class MyIntStack {
         nums.push(4);
         nums.push(8);
         System.out.println(nums);
+        System.out.println(nums.peek());
     }
 }
