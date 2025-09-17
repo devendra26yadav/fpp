@@ -2,30 +2,30 @@ package Lession9.MyStack;
 
 import java.util.Arrays;
 
-public class MyStringStack {
-    private String[] stack;
+public class MyCustomStack<T> {
+    private T[] stack;
     private int size;
     private static final int CAPACITY = 5;
 
-    public MyStringStack() {
+    public MyCustomStack() {
 
-        stack = new String[CAPACITY];
+        stack =(T[]) new Object[CAPACITY];
     }
 
     public void push(String element) {
         if (element == null) return;
         if (size == stack.length) resize();
-        stack[size++] = element;
+        stack[size++] = (T) element;
     }
 
-    public String pop() {
+    public T pop() {
         if (size == 0) return null;
-        String removed = stack[--size];
+        T removed = stack[--size];
         stack[size] = null;
         return removed;
     }
 
-    public String peek() {
+    public T peek() {
         if (size == 0) return null;
         return stack[size - 1];
     }
@@ -58,7 +58,7 @@ public class MyStringStack {
     }
 
     public static void main(String[] args) {
-        MyStringStack stack = new MyStringStack();
+        MyCustomStack<String> stack = new MyCustomStack();
 
         System.out.println("Initial stack: " + stack);
 
