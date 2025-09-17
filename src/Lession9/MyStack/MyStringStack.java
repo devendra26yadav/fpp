@@ -87,6 +87,7 @@ public class MyStringStack {
 
 }
 /*
+Sample Output:
 
 Initial stack: []
 After push: [ Java ]
