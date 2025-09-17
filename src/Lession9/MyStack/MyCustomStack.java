@@ -12,7 +12,7 @@ public class MyCustomStack<T> {
         stack =(T[]) new Object[CAPACITY];
     }
 
-    public void push(String element) {
+    public void push(T element) {
         if (element == null) return;
         if (size == stack.length) resize();
         stack[size++] = (T) element;
