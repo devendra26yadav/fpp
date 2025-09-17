@@ -20,7 +20,7 @@ public class TestMyStringList {
         System.out.println(list);
         list.removeAt(1);
         System.out.println(list);
-//        list.clear();
+        list.clear();
         System.out.println(list);
         list.add("Javascript");
         System.out.println(list);
