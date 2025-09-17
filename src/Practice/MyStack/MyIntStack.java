@@ -1,4 +1,4 @@
-package Lession9.MyStack;
+package Practice.MyStack;
 
 public class MyIntStack {
     public static void main(String[] args) {

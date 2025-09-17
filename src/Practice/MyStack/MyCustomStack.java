@@ -1,4 +1,4 @@
-package Lession9.MyStack;
+package Practice.MyStack;
 
 import java.util.Arrays;
 
