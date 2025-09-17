@@ -86,3 +86,21 @@ public class MyStringStack {
     }
 
 }
+/*
+
+Initial stack: []
+After push: [ Java ]
+After multiple pushes: [ Java, PHP, Python, C++, Go, Rust ]
+Peek: Rust
+Pop: Rust
+After pop: [ Java, PHP, Python, C++, Go ]
+Popped: Go
+Popped: C++
+Popped: Python
+Popped: PHP
+Popped: Java
+Empty stack: []
+Peek on empty: null
+Pop on empty: null
+
+ */
