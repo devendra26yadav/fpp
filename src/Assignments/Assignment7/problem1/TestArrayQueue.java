@@ -46,6 +46,6 @@ public class TestArrayQueue {
         }
         System.out.println("Queue after emptying: " + queue);
         System.out.println("Is queue empty? " + queue.isEmpty());
-        queue.enqueue(null);
+//        queue.enqueue(null);
     }
 }

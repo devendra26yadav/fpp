@@ -14,12 +14,12 @@ public class TestStack {
         System.out.println(stack.peek());
         System.out.println(stack.size());
 
-        System.out.println(stack.pop());
+        System.out.println("pop : "+stack.pop());
         System.out.println(stack);
-        System.out.println(stack.peek());
+        System.out.println("Peek  :"+stack.peek());
 
         while (!stack.isEmpty()) {
-            System.out.println(stack.pop());
+            System.out.println("Poped : "+stack.pop());
         }
 
         System.out.println("stack.isEmpty() : "+stack.isEmpty());
@@ -34,12 +34,13 @@ null
 [10, 20, 30]
 30
 3
-30
+pop : 30
 [10, 20]
-20
-20
-10
+Peek  :20
+Poped : 20
+Poped : 10
 stack.isEmpty() : true
 null
+
 
  */
