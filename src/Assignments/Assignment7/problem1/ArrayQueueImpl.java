@@ -1,7 +1,7 @@
 package Assignments.Assignment7.problem1;
 
 public class ArrayQueueImpl {
-    private final int DEFAULT_CAPACITY = 4;
+    private final int DEFAULT_CAPACITY = 500;
     private int size;
     private Integer[] arr;
     private int front;

@@ -23,7 +23,7 @@ public class BrowserHistoryNavigation {
     }
     public void back() {
         if (backStack.isEmpty()) {
-            System.out.println("No history to go back");
+            System.out.println("No history to go back to.");
             return;
         }
         forwardStack.push(currentUrl);
@@ -32,7 +32,7 @@ public class BrowserHistoryNavigation {
     }
     public void forward() {
         if (forwardStack.isEmpty()) {
-            System.out.println("No forward history");
+            System.out.println("No forward history.");
             return;
         }
         backStack.push(currentUrl);
