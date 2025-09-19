@@ -46,6 +46,7 @@ public class TestArrayQueue {
         }
         System.out.println("Queue after emptying: " + queue);
         System.out.println("Is queue empty? " + queue.isEmpty());
-        queue.enqueue(null);// here Exception will be generated as of our logic
+
+       // queue.enqueue(null);// We commented because  Exception will be generated as of our logic
     }
 }
