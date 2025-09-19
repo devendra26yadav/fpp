@@ -6,7 +6,7 @@ public class BST {
     private Node root;
     private int size;
 
-    static class Node{
+    private static class Node{
         Node left;
         Integer data;
         Node right;
