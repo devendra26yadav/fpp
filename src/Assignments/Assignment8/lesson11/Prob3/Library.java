@@ -28,7 +28,10 @@ public class Library {
     }
 
     public void borrowBook(String ISBN) {
-        if (ISBN == null) return;
+        if (ISBN == null){
+            System.out.println("Please check the ISBN");
+            return;
+        }
         if (books.containsKey(ISBN)) {
             if (!books.get(ISBN).isBorrowed()) {
                 books.get(ISBN).setBorrowed(true);
@@ -76,6 +79,7 @@ public class Library {
     }
 
     public void listBorrowedBooks() {
+
         if (books.isEmpty()) return;
         List<Book> borrowedBooks = new ArrayList<>();
         for (Book book : books.values()) {
@@ -83,10 +87,11 @@ public class Library {
                 borrowedBooks.add(book);
             }
         }
-        borrowedBooks.sort(Comparator.comparing(Book::getISBN));
+
         if (borrowedBooks.isEmpty()) {
             System.out.println("No borrowed books.");
         } else {
+            borrowedBooks.sort(Comparator.comparing(Book::getISBN));
             System.out.println("Borrowed Books ");
             for (Book b : borrowedBooks) {
                 System.out.println(b);

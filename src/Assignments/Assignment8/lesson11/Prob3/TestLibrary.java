@@ -10,6 +10,7 @@ public class TestLibrary {
         library.borrowBook("5647382910");
         System.out.print("\nDetails : " + library.getBookDetails("6789012345"));
         library.borrowBook("6789012395");
+        library.borrowBook("1122334455");
         System.out.println("Is Borrowed : "+library.isBookBorrowed("6789012345"));
 
         System.out.println("Listing All Available Books");
