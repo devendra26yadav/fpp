@@ -23,6 +23,8 @@ public class ShoppingCart {
                 sc.next();
             }
 
+            } catch (IllegalArgumentException ie) {
+                System.out.println(ie.getMessage());
             }
         }
         sc.close();
