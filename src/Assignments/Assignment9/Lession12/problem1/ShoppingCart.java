@@ -31,3 +31,16 @@ public class ShoppingCart {
         sc.close();
     }
 }
+/*
+
+Enter quantity of items to add (1-50): kajglikjalijfikf
+Invalid input! Please enter an integer value.
+Enter quantity of items to add (1-50): jofjjosjofjof
+Invalid input! Please enter an integer value.
+Enter quantity of items to add (1-50): -2222
+Quantity must be between 1 and 50.
+Enter quantity of items to add (1-50): 600
+Quantity must be between 1 and 50.
+Enter quantity of items to add (1-50): 34
+Successfully added 34 items to your cart!
+ */

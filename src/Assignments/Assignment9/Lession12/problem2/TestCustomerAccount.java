@@ -47,3 +47,23 @@ public class TestCustomerAccount {
     }
 
 }
+/*
+
+Depositing amount
+Deposit can not be negative
+
+Depositing amount
+Successful deposit : $60.0
+
+Withdrawing more than the balance
+Insufficient funds! Withdrawal amount exceeds balance.
+
+Withdrawing valid amount that drops below $100
+Low balance warning! Balance cannot go below $100.
+
+Withdrawing valid amount
+Withdrawal Successful : $45.55
+
+Total Balance : $214.45
+
+ */

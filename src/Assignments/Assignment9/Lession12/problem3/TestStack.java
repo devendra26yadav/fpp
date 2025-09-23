@@ -59,3 +59,28 @@ public class TestStack {
         }
     }
 }
+/*
+
+Push 10, 20, 30
+Stack: [10, 20, 30]
+Peek: 30
+Pop: 30
+After pop, peek: 20
+Push : 70
+Stack: [10, 20, 70]
+
+Trying to push 40 (should cause overflow)
+Caught exception: Stack Overflow: cannot push, stack is full.
+
+Trying to push null (should cause NullPointerException)
+Caught exception: Null values are not allowed.
+
+Popping remaining elements...
+
+Trying to pop from empty stack
+Caught exception: Cannot pop, stack is empty.
+
+Trying to peek from empty stack
+Caught exception: Cannot peek, stack is empty.
+
+ */

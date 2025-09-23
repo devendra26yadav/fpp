@@ -16,7 +16,7 @@ public class CustomerAccount {
             throw new IllegalArgumentException("Deposit can not be negative");
         } else if (amount > 0) {
             balance += amount;
-            System.out.println("Successful deposit : "+amount);
+            System.out.println("Successful deposit : $"+amount);
             return true;
         }
         return false;
@@ -31,7 +31,7 @@ public class CustomerAccount {
                 throw new AccountException("Low balance warning! Balance cannot go below $100.");
             }
             balance -= amount;
-            System.out.println("Withdrawal Successful : "+amount);
+            System.out.println("Withdrawal Successful : $"+amount);
             return true;
         } else if (amount <= 0) {
             throw new AccountException("Withdrawal can not be applied");
